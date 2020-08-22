@@ -30,6 +30,12 @@ function setup() {
   wall = createSprite(1200,200,thickness,height/2);
   wall.shapeColor = color(80,80,80);
 
+  
+  
+}
+
+function draw() {
+  background(255,255,255);
   if(wall.x - bullet.x < (bullet.width+ wall.width)/2)
   {
     bullet.velocityX = 0;
@@ -68,11 +74,6 @@ function setup() {
       wall.shapeColor = color(0,225,0);
     }
   }
-  
-  
-}
-
-function draw() {
-  background(255,255,255);  
+    
   drawSprites();
 }
